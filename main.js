@@ -28,3 +28,4 @@ Student.prototype.courseApproved = function(course){
 
 const juanita = new Student("Juana", 15, ["Video Games introduction course",
                             "Character creation course"],);
+
