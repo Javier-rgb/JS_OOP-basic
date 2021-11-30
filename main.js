@@ -29,3 +29,21 @@ Student.prototype.courseApproved = function(course){
 const juanita = new Student("Juana", 15, ["Video Games introduction course",
                             "Character creation course"],);
 
+
+// Classes
+
+class StudentC {
+    constructor({name, age, approvedCourses = [], email}){
+        this.name = name;
+        this.age = age;
+        this. approvedCourses = approvedCourses;
+        this.email = email;
+    }
+
+    courseApproved(course){
+        this.approvedCourses.push(course);
+    }
+}
+
+const miguel = new StudentC({email: "miguel.hd@hotmail.com", name: "Miguel", age: 28, approvedCourses: ["Business Data Analysis", 
+                            "Principles of Data vizualization for BI"]});
